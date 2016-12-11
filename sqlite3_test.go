@@ -1292,6 +1292,9 @@ func TestPinger(t *testing.T) {
 	err = db.Ping()
 	if err == nil {
 		t.Fatal("Should be closed")
+        }
+}
+        
 
 func TestUpdateAndTransactionHooks(t *testing.T) {
 	var events []string
